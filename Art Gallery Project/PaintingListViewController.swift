@@ -8,15 +8,19 @@
 
 import UIKit
 
-class PaintingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class PaintingListViewController: UIViewController {
+    
+
     
     @IBOutlet weak var tableView: UITableView!
     
+   
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadPaintingFromAssets()
         
     }
 
@@ -25,13 +29,7 @@ class PaintingViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
     
     
 
