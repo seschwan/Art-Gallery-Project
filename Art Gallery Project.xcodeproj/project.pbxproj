@@ -62,18 +62,26 @@
 		EF2F510A227924EC00F5E345 /* Art Gallery Project */ = {
 			isa = PBXGroup;
 			children = (
-				EF2F510B227924EC00F5E345 /* AppDelegate.swift */,
+				EF2F512722794F2000F5E345 /* Storyboards */,
 				EF2F510D227924EC00F5E345 /* PaintingListViewController.swift */,
-				EF2F510F227924EC00F5E345 /* Main.storyboard */,
 				EF2F51252279427A00F5E345 /* PaintingTableViewCell.swift */,
 				EF2F51232279316200F5E345 /* PaintingController.swift */,
 				EF2F511F22792BEC00F5E345 /* PaintingTableViewCellDelegate.swift */,
 				EF2F512122792C0200F5E345 /* PaintingModel.swift */,
 				EF2F5112227924ED00F5E345 /* Assets.xcassets */,
-				EF2F5114227924ED00F5E345 /* LaunchScreen.storyboard */,
+				EF2F510B227924EC00F5E345 /* AppDelegate.swift */,
 				EF2F5117227924ED00F5E345 /* Info.plist */,
 			);
 			path = "Art Gallery Project";
+			sourceTree = "<group>";
+		};
+		EF2F512722794F2000F5E345 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EF2F510F227924EC00F5E345 /* Main.storyboard */,
+				EF2F5114227924ED00F5E345 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

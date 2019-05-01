@@ -13,7 +13,6 @@ class PaintingTableViewCell: UITableViewCell {
     @IBOutlet weak var paintingImageView: UIImageView!
     @IBOutlet weak var likeUnlikeBtn: UIButton!
     
-    @IBOutlet weak var likeUnlikeBtnPressed: UIButton!
     
     
     var painting: Painting?
@@ -21,11 +20,13 @@ class PaintingTableViewCell: UITableViewCell {
     func updateViews() {
         if let hasValue = painting {
             // paintingImageView.image = ?
-            
+        
         }
-        if  painting?.isLiked == true {
-            
-        }
+        
+    }
+    @IBAction func likeUnlikeBtnPressed(_ sender: UIButton) {
+        
+        
     }
     
 }

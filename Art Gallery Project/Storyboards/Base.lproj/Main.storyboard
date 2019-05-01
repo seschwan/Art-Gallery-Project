@@ -39,6 +39,9 @@
                                                         <constraint firstAttribute="height" constant="30" id="kYn-Rw-Os0"/>
                                                     </constraints>
                                                     <state key="normal" title="Like"/>
+                                                    <connections>
+                                                        <action selector="likeUnlikeBtnPressed:" destination="Sey-nF-XWa" eventType="touchUpInside" id="ibW-0l-1vL"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -52,7 +55,6 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="likeUnlikeBtn" destination="idr-zB-HFQ" id="d5y-aO-3FU"/>
-                                            <outlet property="likeUnlikeBtnPressed" destination="idr-zB-HFQ" id="07p-Sq-ypx"/>
                                             <outlet property="paintingImageView" destination="pNS-Ee-YOt" id="WiV-So-Tnr"/>
                                         </connections>
                                     </tableViewCell>
