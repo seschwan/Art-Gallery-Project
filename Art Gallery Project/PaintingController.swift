@@ -9,21 +9,26 @@
 import Foundation
 import UIKit
 
-var paintings: [Painting] = []
+
+class PaintingController {
+    var paintings: [Painting] = []
 
 
+    init() {
+        loadPaintingFromAssets()
+    }
 
 func loadPaintingFromAssets() {
     for i in 1...12 {
-       var image = "Image\(i)"
-        if let newImage = UIImage(named: image) {
-            let painting = Painting(image: newImage)
-            paintings.append(painting)
-        }
+        let image: String = "Image\(i)"
+        guard let UIImage = UIImage(named: image) else { return }
+        let painting = Painting(image: UIImage)
+        paintings.append(painting)
     }
-    print(paintings)
 }
 
 func toggleIsLiked(for painting: Painting) {
     painting.isLiked.toggle()
+}
+
 }
